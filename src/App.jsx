@@ -8,7 +8,7 @@ import Projects from './Screens/Projects';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/Home" element={<Home />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
