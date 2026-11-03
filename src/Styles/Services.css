@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.services-page{
+    background:#f8f9fa;
+}
+
+/* HERO */
+
+.services-hero{
+    height:70vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.70),
+        rgba(0,0,0,.70)
+    ),
+    url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.services-overlay{
+    color:white;
+    text-align:center;
+}
+
+.services-overlay h1{
+    font-size:5rem;
+    margin-bottom:20px;
+}
+
+.services-overlay p{
+    font-size:1.2rem;
+    max-width:700px;
+}
+
+/* INTRO */
+
+.services-intro{
+    text-align:center;
+    padding:80px 10%;
+}
+
+.services-intro h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.services-intro p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+}
+
+/* SERVICE GRID */
+
+.services-grid{
+    padding:20px 10% 100px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-12px);
+}
+
+.icon{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    color:#ffb400;
+    margin-bottom:15px;
+}
+
+.service-card p{
+    color:#555;
+    line-height:1.8;
+}
+
+/* PROCESS */
+
+.work-process{
+    background:#111827;
+    padding:100px 10%;
+    color:white;
+}
+
+.work-process h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:60px;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.process-card{
+    background:rgba(255,255,255,.05);
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.process-card span{
+    color:#ffb400;
+    font-size:3rem;
+    font-weight:bold;
+}
+
+.process-card h3{
+    margin:20px 0;
+}
+
+/* WHY CHOOSE US */
+
+.why-choose{
+    padding:100px 10%;
+}
+
+.why-choose h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:50px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.why-grid div{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.why-grid h3{
+    color:#ffb400;
+    margin-bottom:15px;
+}
+
+/* CTA */
+
+.service-cta{
+    background:#ffb400;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.service-cta h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.service-cta p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.service-cta button{
+    background:#111827;
+    color:white;
+    border:none;
+    padding:18px 40px;
+    border-radius:50px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.service-cta button:hover{
+    transform:translateY(-5px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .services-overlay h1{
+        font-size:3rem;
+    }
+
+    .service-cta h1{
+        font-size:2.5rem;
+    }
+}
